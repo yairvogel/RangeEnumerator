@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RangeEnumerator", "RangeEnumerator\RangeEnumerator.csproj", "{351E7D09-903C-4A5C-B059-373E28539ECF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RangeEnumerator.Tests", "RangeEnumerator.Tests\RangeEnumerator.Tests.csproj", "{A219852B-04DC-48E1-B8F8-774720C532F0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{351E7D09-903C-4A5C-B059-373E28539ECF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{351E7D09-903C-4A5C-B059-373E28539ECF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{351E7D09-903C-4A5C-B059-373E28539ECF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{351E7D09-903C-4A5C-B059-373E28539ECF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A219852B-04DC-48E1-B8F8-774720C532F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A219852B-04DC-48E1-B8F8-774720C532F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A219852B-04DC-48E1-B8F8-774720C532F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A219852B-04DC-48E1-B8F8-774720C532F0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
