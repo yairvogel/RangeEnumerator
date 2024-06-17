@@ -6,13 +6,23 @@ using RangeEnumerator;
 BenchmarkRunner.Run<RangeEnumeratorBenchmark>();
 
 
-public class RangeEnumeratorBenchmark
+public sealed class RangeEnumeratorBenchmark
 {
-    private const int N = 10_000;
+    [Params(1, 100, 10_000)]
+    public int N;
 
-    private readonly int[] ourBuffer = new int[N];
-    private readonly int[] enumerableBuffer = new int[N];
-    private readonly int[] classicBuffer = new int[N];
+
+    private int[] ourBuffer = [];
+    private int[] enumerableBuffer = [];
+    private int[] classicBuffer = [];
+
+    [GlobalSetup]
+    public void GlobalSetup()
+    {
+        ourBuffer = new int[N];
+        enumerableBuffer = new int[N];
+        classicBuffer = new int[N];
+    }
     
     [Benchmark]
     public void RangeEnumerator()

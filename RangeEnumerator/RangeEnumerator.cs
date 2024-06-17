@@ -8,7 +8,7 @@ public static class RangeExtensions
     public static IEnumerator<int> GetEnumerator(this Range range) => new RangeEnumerator(range);
 }
 
-class RangeEnumerator(Range range) : IEnumerator<int>
+struct RangeEnumerator(Range range) : IEnumerator<int>
 {
     private int buffer = range.Start.Value;
 
