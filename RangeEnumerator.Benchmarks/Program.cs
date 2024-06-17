@@ -6,7 +6,7 @@ using RangeEnumerator;
 BenchmarkRunner.Run<RangeEnumeratorBenchmark>();
 
 
-public sealed class RangeEnumeratorBenchmark
+public class RangeEnumeratorBenchmark
 {
     [Params(1, 100, 10_000)]
     public int N;
